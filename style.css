@@ -157,28 +157,94 @@ a, button {
   border-color: #38bdf8;
   background: linear-gradient(135deg, #020617, #0f172a);
 }
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+}
 
-/* CERTIFICATES */
+.contact {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input & textarea */
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+/* Placeholder color */
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #ddd;
+}
+
+/* Textarea height */
+.contact textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* Button */
+.contact button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background: #00bcd4;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+/* Button hover */
+.contact button:hover {
+  background: #00acc1;
+  transform: translateY(-2px);
+}
+
+
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* mobile friendly */
   margin-top: 30px;
 }
 
 .card {
   background: #111;
-  padding: 25px 20px;
-  border-radius: 18px;
-  border: 1px solid #1e293b
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 18px;
+  width: 240px;   /* small box */
+  text-align: center;
 }
 
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #93c5fd;
+}
+
+/* Small button style */
 .view-btn {
   display: inline-block;
-  padding: 7px 14px;
-  font-size: 0.85rem;
-  background-color: #38bdf8;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  background: #38bdf8;
   color: #000;
   text-decoration: none;
   border-radius: 6px;
@@ -186,6 +252,6 @@ a, button {
 }
 
 .view-btn:hover {
-  background-color: #0ea5e9;
+  background: #0ea5e9;
   color: #fff;
 }
